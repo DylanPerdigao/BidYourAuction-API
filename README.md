@@ -45,10 +45,10 @@ python3 registAdmins.py
 ```
 ## Requests
 ### User Sign Up
-```json
+```apache
 POST http://localhost:8080/dbproj/user
 ```
-```json
+```yaml
 {
    "username": "maria",
    "email": "maria@email.com",
@@ -56,17 +56,17 @@ POST http://localhost:8080/dbproj/user
 }
 ```
 ### Sign In
-```json
+```apache
 PUT http://localhost:8080/dbproj/user
 ```
-```json
+```yaml
 {
    "username": "mara",
    "password": "password"
 }
 ```
 ### Create Auction
-```yaml
+```apache
 POST http://localhost:8080/dbproj/leilao
 ```
 ```yaml
@@ -79,62 +79,62 @@ POST http://localhost:8080/dbproj/leilao
 }
 ```
 ### List existing Auctions
-```json
+```apache
 GET http://localhost:8080/dbproj/leiloes
 ```
 ### Search existing Auctions
-```json
+```apache
 GET http://localhost:8080/dbproj/leiloes/{keyword}
 ```
 ### Auction's details 
-```json
+```apache
 GET http://localhost:8080/dbproj/leilao/{leilaoId}
 ```
 ### List Auctions where user has some activity
-```json
+```apache
 GET http://localhost:8080/dbproj/user/leiloes
 ```
 ### Bid
-```json
- POST http://localhost:8080/dbproj/licitar/{leilaoId}/{licitacao}
+```apache
+POST http://localhost:8080/dbproj/licitar/{leilaoId}/{licitacao}
 ```
 ### Edit Auction's details
-```json
+```apache
 PUT http://localhost:8080/dbproj/leilao/{leilaoId}
 ```
-```json
+```yaml
 {
    "titulo": "Agua do Mondegoo",
    "descricao": "Agua fresca do rio Mondegoo"
 }
 ```
 ### Write feed message
-```json
+```apache
 POST http://localhost:8080/dbproj/feed/{leilaoId}
 ```
-```json
+```yaml
 {
    "message" : "O que justifica o preco do artigo?",
    "type" : "question"
 }
 ```
 ### List notifications
-```json
+```apache
 GET http://localhost:8080/dbproj/inbox
 ```
 ### Check if Auction ended
-```json
+```apache
 PUT http://localhost:8080/dbproj/leilao/checkFinish
 ```
 ### Cancel Auction
-```json
+```apache
 PUT http://localhost:8080/dbproj/leilao/cancel/{leilaoId}
 ```
 ### Ban user
-```json
+```apache
 PUT http://localhost:8080/dbproj/ban/{username}
 ```
 ### Get some statistics
-```json
-http://localhost:8080/dbproj/stats
+```apache
+GET http://localhost:8080/dbproj/stats
 ```
