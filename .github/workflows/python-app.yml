@@ -27,3 +27,11 @@ jobs:
     - name: Run
       run: 
         python api/main.py
+      with:
+        KEY: ${{ secrets.KEY }}
+        SECRET: ${{ secrets.SECRET }}
+        BIDYOURAUCTION_USER: ${{ secrets.BIDYOURAUCTION_USER }}
+        BIDYOURAUCTION_PASSWORD: ${{ secrets.BIDYOURAUCTION_PASSWORD }}
+        BIDYOURAUCTION_HOST: ${{ secrets.BIDYOURAUCTION_HOST }}
+        BIDYOURAUCTION_PORT: ${{ secrets.BIDYOURAUCTION_PORT }}
+        BIDYOURAUCTION_DB: ${{ secrets.BIDYOURAUCTION_DB }}
