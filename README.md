@@ -66,10 +66,10 @@ PUT http://localhost:8080/dbproj/user
 }
 ```
 ### Create Auction
-```json
+```yaml
 POST http://localhost:8080/dbproj/leilao
 ```
-```json
+```yaml
 {
    "artigoId": 69,
    "precoMinimo": 10000.00,
@@ -137,4 +137,4 @@ PUT http://localhost:8080/dbproj/ban/{username}
 ### Get some statistics
 ```json
 http://localhost:8080/dbproj/stats
-``
+```
