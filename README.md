@@ -114,8 +114,8 @@ POST http://localhost:8080/dbproj/feed/{leilaoId}
 ```
 ```yaml
 {
-   "message" : "O que justifica o preco do artigo?",
-   "type" : "question"
+   "message": "O que justifica o preco do artigo?",
+   "type": "question"
 }
 ```
 ### List notifications
