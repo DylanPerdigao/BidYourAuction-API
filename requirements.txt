@@ -1,4 +1,4 @@
 flask
 jwt
 psycopg2
-criptography
+cryptography
