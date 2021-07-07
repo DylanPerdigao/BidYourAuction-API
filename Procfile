@@ -1,1 +1,1 @@
-web: gunicorn bidyourauction-app:api/main.py
+web: gunicorn api/main.py:app
