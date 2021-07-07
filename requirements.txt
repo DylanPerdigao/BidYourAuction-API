@@ -3,5 +3,3 @@ flask
 jwt
 psycopg2
 cryptography
-
--e api/main.py
