@@ -11,7 +11,7 @@ python -m pip install flask
 python -m pip install jwt
 python -m pip install psycopg2
 python -m pip install cryptography
-``
+```
 ### Connect to database
 ```shell
 psql -h localhost -p 5432 -d postgres -U postgres
