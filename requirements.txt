@@ -1,6 +1,0 @@
-wheel
-flask
-gunicorn
-jwt
-psycopg2
-cryptography
